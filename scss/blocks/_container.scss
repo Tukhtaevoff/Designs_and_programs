@@ -1,18 +1,10 @@
 .container{
-    max-width: 1230px;
+    width: $defaultWidth;
     margin: 0 auto;
-    padding: 0 15px;
 }
 
-@media only screen and (max-width: $tablet) {
-    .container {
-    max-width: $mobile;
-    padding: 0 15px;
-    }
-}
-    
-@media only screen and (max-width: $mobile) {
-    .container {
-    max-width: 318px;
+@media only screen and (max-width: 375px) {
+    .container{
+        max-width: 327px;
     }
 }

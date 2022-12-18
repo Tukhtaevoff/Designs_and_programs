@@ -1,18 +1,11 @@
-html {
-    box-sizing: border-box;
-    }
-    
-    *,
-    *::before,
-    *::after {
-    box-sizing: border-box;
-    }
-
-
-body{
-    font-family: 'Basic';
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto';
 }
 .visually-hidden {
     clip: rect(0 0 0 0);

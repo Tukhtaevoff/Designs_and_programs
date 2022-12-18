@@ -1,46 +1,104 @@
 .footer{
-    background-color: #171717;
+    background-color: #FAFAFA;
+    margin-top: 150px;
+    background-image: url(../../images/Group\ 22.svg);
+    background-repeat: no-repeat;
     .footer__container{
-        height: 130px;
-        text-align: center;
-        padding-top: 30px;
-        .footer__text{
-            color: $defaultColor;
-            font-size: 1rem;
-            line-height: 22px;
-            font-weight: 500;
+        height: 393px;
+        padding-top: 64px;
+        .footer__wrapper{
+            height: 20%;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #DADADA;
+            .social-media{
+                display: flex;
+                width: 144px;
+                justify-content: space-between;
+                img{
+                    width: 24px;
+                    height: 24px;
+                }
+                img:active{
+                    background-color: #2D2641;
+                }
+                img:hover{
+                    padding-bottom: 5px;
+                    transition: 0.4s;
+                }
+            }
         }
-        .privacy-policy{
-            color: #FF8562;
-            font-size: 1.2rem;
-            padding: 0px 0px 30px 0px;
-            line-height: 22px;
-            font-weight: 500;
+        .footer__navbar{
+            height: 80%;
+            width: 100%;
+            .footer__list{
+                margin-top: 48px;
+                display: flex;
+                justify-content: space-between;
+                .footer__list-item{
+                    width: 25%;
+                    height: 100%;
+                    list-style: none;
+                    display: flex;
+                    flex-direction: column;
+                    h4{
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 0.813rem;
+                        line-height: 80px;
+                        color: #837D88;
+                        display: inline-block;
+                    }
+                    .footer__list-link{
+                        text-decoration: none;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 0.813rem;
+                        line-height: 33px;
+                        color: #2D2641;
+                        display: inline-block;
+                    }
+                    .footer__list-link:active{
+                        text-decoration: underline;
+                    }
+                }
+            }
         }
     }
 }
 
-@media only screen and (max-width: $tablet) {
+@media only screen and (max-width: 375px) {
     .footer{
         .footer__container{
-            max-height: 87px;
-            padding: 10px 0px;
-            .footer__text{
-                font-size: 0.75rem;
+            min-height: 1110px;
+            padding-top: 88px;
+            .footer__wrapper{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+                .social-media{
+                    margin: 0 auto;
+                    margin-top: 32px;
+                }
             }
-            .privacy-policy{
-                font-size: 0.75rem;
-                line-height: 22px;
+            .footer__navbar{
+                .footer__list{
+                    display: flex;
+                    margin: 0 auto;
+                flex-direction: column;
+                justify-content: center;
+                margin-top: 40px;
+                min-width: 100%;
+                .footer__list-item{
+                    min-height: 25%;
+                    min-width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                }
+                }
             }
-        }
-    }
-}
-
-@media only screen and (max-width: $mobile) {
-    .footer{
-        .footer__container{
-            max-height: 97px;
-            padding: 0.5px 0px 0px;
         }
     }
 }
