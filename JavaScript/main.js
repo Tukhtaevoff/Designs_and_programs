@@ -1,31 +1,78 @@
-const contractEl = 2000;
-
-const superContractEl = 3000;
-
-const text = document.querySelector(".text");
-
-const scoreEl = +prompt("Balingizni kiriting 👉 (Maximal 200 ball)");
-
-if (scoreEl > 200) {
-    text.textContent = "Uzr bizda bunday katta ball mavjud emas 🤦‍♂️"
-}  else if (scoreEl >= 150) {
-    text.textContent = "Tabriklaymiz siz Grand asosida o'qishga qabul qilindingiz 🙌"
-} else if ( scoreEl < 150 && scoreEl >= 100 ) {
-    const contractBudget = +prompt("Siz o'qishga kontrakt asosida tavsiya qilindingiz. Iltimos mablag'ingizni kiriting $");
-    if ( contractBudget >= contractEl ) {
-        text.textContent = "Tabriklaymiz, siz o'qishga kontrakt asosida qabul qilindingiz 👍"
-    } else {
-        text.textContent = "Uzr Biz sizni o'qishga kontrakt asosida qabul qilolmaymiz, Mablag'ingiz kamlik qiladi 😞"
-    }
-} else if ( scoreEl < 100 && scoreEl >= 80 ) {
-    const superContractBudget = +prompt("Siz o'qishga Super kontrakt asosida tavsiya qilindingiz. Iltimos mablag'ingizni kiriting $");
-    if ( superContractBudget >= superContractEl ) {
-        text.textContent = "Tabriklaymiz, siz o'qishga Super kontrakt asosida qabul qilindingiz 😉"
-    } else {
-        text.textContent = "Uzr biz sizni o'qishga super kontrakt asosida qabul qilomaymiz, Mablag'ingiz ozgina kamlik qilyapti 😔"
-    }
-} else if ( scoreEl < 80 && scoreEl >= 0 ) {
-    text.textContent = "Afsuski O'qishga kira olmadingiz, sizdan yanada ko'proq harakat qilishingizni so'rab qolardik ✌️"
-} else {
-    text.textContent = "Bizni ahmoq deb o'ylayapsizmi😡"
+// TODO: write the validation functions
+function isValidName(name) {
+    if (typeof name == "string" && name.trim().length >= 3) {
+        return true;
+    } 
+    return false;
 }
+
+
+function hoursAttended(attended,length) {
+	if (
+		typeof attended == "string" &&
+		attended.trim() != ""
+	) {
+		attended = Number(attended);
+	}
+	if (
+		typeof length == "string" &&
+        length.trim() != ""
+	) {
+		length = Number(length);
+	}
+	if (
+		typeof attended == "number" &&
+		typeof length == "number" &&
+		attended <= length &&
+		attended >= 0 &&
+		length >= 0 &&
+		Number.isInteger(attended) &&
+		Number.isInteger(length)
+	) {
+		return true;
+	}
+
+	return false;
+}
+
+
+function name(a, b) {
+    
+}
+
+// tests:
+console.log(isValidName("") === true);
+console.log(hoursAttended(6,10) === true);
+console.log(hoursAttended(6,"10") === true);
+console.log(hoursAttended("6",10) === true);
+console.log(hoursAttended("6","10") === true);
+
+console.log(isValidName(false) === false);
+console.log(isValidName(null) === false);
+console.log(isValidName(undefined) === false);
+console.log(isValidName("") === false);
+console.log(isValidName("  \t\n") === false);
+console.log(isValidName("X") === false);
+console.log(hoursAttended("",6) === false);
+console.log(hoursAttended(6,"") === false);
+console.log(hoursAttended("","") === false);
+console.log(hoursAttended("foo",6) === false);
+console.log(hoursAttended(6,"foo") === false);
+console.log(hoursAttended("foo","bar") === false);
+console.log(hoursAttended(null,null) === false);
+console.log(hoursAttended(null,undefined) === false);
+console.log(hoursAttended(undefined,null) === false);
+console.log(hoursAttended(undefined,undefined) === false);
+console.log(hoursAttended(false,false) === false);
+console.log(hoursAttended(false,true) === false);
+console.log(hoursAttended(true,false) === false);
+console.log(hoursAttended(true,true) === false);
+console.log(hoursAttended(10,6) === false);
+console.log(hoursAttended(10,"6") === false);
+console.log(hoursAttended("10",6) === false);
+console.log(hoursAttended("10","6") === false);
+console.log(hoursAttended(6,10.1) === false);
+console.log(hoursAttended(6.1,10) === false);
+console.log(hoursAttended(6,"10.1") === false);
+console.log(hoursAttended("6.1",10) === false);
+console.log(hoursAttended("6.1","10.1") === false);
