@@ -1,7 +1,5 @@
 let points = 0;
 
-const input = document.getElementById("input");
-
 function australia(userAnswer) {
   // what is the capital of australia?
   // 100 pts
@@ -28,12 +26,25 @@ function canada(userAnswer) {
 function uppercase(userAnswer, word) {
   // what is <word> in all capital letters?
   // 200 pts
+  const isCorrect = userAnswer == (word).toUpperCase();
+
+  if (isCorrect) {
+    points += 200;
+  }
+  return isCorrect;
   
 }
 
 function firstThreeLetters(userAnswer, word) {
   // what are the first three letters of <word>?
   // 200 pts
+
+  const isCorrect = userAnswer == word.substring(0,3);
+
+  if (isCorrect) {
+    points += 200;
+  } 
+  return isCorrect;
   
 }
 
@@ -42,12 +53,24 @@ function squared(userAnswer, number) {
   // 200 pts
   
   const isCorrect = userAnswer == number ** 2;
+
+  if (isCorrect) {
+    points += 200;
+  }
+  return isCorrect;
   
 }
 
 function multiplication(userAnswer, num1, num2) {
   // what is <num1> multiplied by <num2>?
   // 300 pts
+
+  const isCorrect = userAnswer == num1 * num2;
+
+  if (isCorrect) {
+    points += 300;
+  }
+  return isCorrect;
   
 }
 
@@ -55,18 +78,31 @@ function age(userAnswer, currentYear, birthYear) {
   // if someone was born in <birthYear> and already has had their birthday this year, how old are they?
   // 300 pts
 
+  const isCorrect = userAnswer == currentYear - birthYear;
+
+  if (isCorrect) {
+    points += 300;
+  }
+  return isCorrect;
+
 }
 
-function larger(userAnswer, num1, num2) {
-  // which of ${number4} and ${number5} is larger (if they're the same then pick that number)?
-  // 300 pts
+// function larger(userAnswer, num1, num2) {
+//   // which of ${number4} and ${number5} is larger (if they're the same then pick that number)?
+//   // 300 pts
   
-}
+//   const isCorrect = userAnswer == num1 === num2;
 
-function getScore() {
-  // returns the current user's quiz score score
+//   if (isCorrect) {
+//     points += 300;
+//   }
+//   return isCorrect;
+// }
 
-}
+// function getScore() {
+//   // returns the current user's quiz score score
+
+// }
 
 // DO NOT MODIFY CODE UNDER THIS COMMENT
 
@@ -185,13 +221,13 @@ function getScore() {
       meta: [currentYear, birthYear],
       validator: age,
       points: 300
-    },
-    {
-      question: `which of ${number4} and ${number5} is larger (if they're the same then pick that number)?`,
-      meta: [number4, number5],
-      validator: larger,
-      points: 300
     }
+    // {
+    //   question: `which of ${number4} and ${number5} is larger (if they're the same then pick that number)?`,
+    //   meta: [number4, number5],
+    //   validator: larger,
+    //   points: 300
+    // }
   ];
 
   const input = document.getElementById("input");
