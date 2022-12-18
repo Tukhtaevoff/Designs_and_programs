@@ -1,114 +1,81 @@
 .intro{
-    background: #014E56;
-    overflow: hidden;
-    position: relative;
-    .intro__img{
-        position: absolute;
-        left: -100px;
-        top: 100px;
+    height: 600px;
+    background-image: url(../../images/Bitmap.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 80px 0px 0px 86px;
+    border-radius: 10px;
+    .intro__title{
+        font-size: 4.5rem;
+        font-family: 'Fraunces';
+        color: #FEFCF7;
+        font-weight: 900;
+        line-height: 72px;
+        font-style: normal;
     }
-    .intro__container{
-        display: flex;
-        justify-content: space-between;
-        padding: 0px 0px 50px;
-        
-        .intro__title{
-            font-size: 6.25rem;
-            color: $defaultColor;
-            font-weight: 700;
-            max-width: 565px;
-            line-height: 100px;
-            span{
-                color: #F67E7E;
-            }
-        }
-        .intro__paragraph{
-            font-size: 1.125rem;
-            max-width: 460px;
-            padding: 160px 0;
-            letter-spacing: 1px;
-            color: $defaultColor;
-            position: relative;
-            display: block;
-            line-height: 28px;
-
-            &::before{
-                @include before;
-            }
-        }
+    .intro__text{
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        color: #FEFCF7;
+        opacity: 0.8;
+        max-width: 445px;
+        padding: 0px 0px 30px 0px;
     }
-    .combined-shape{
-        position: absolute;
-        top: 430px;
-        left: 63.5%;
+    .intro__btn{
+        padding: 15px 31px 16px;
+        color: #FEFCF7;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 25px;
+        border: none;
+        background-color: #0E8784;
+        border-radius: 6px;
+    }
+    .intro__btn:hover{
+        cursor: pointer;
+    }
+    .intro__btn:active{
+        background-color: #66D2CF; 
     }
 }
 
 @media only screen and (max-width: $tablet) {
     .intro{
-        .intro__img{
-            display: none;
+        max-height: 500px;
+        .intro__title{
+            font-size: 3rem;
+            line-height: 58px;
+            letter-spacing: 2px;
         }
-        .intro__container{
-            text-align: center;
-            display: block;
-            width: 100%;
-            padding: 20px 0px;
-            .intro__title{
-             font-size: 4rem;
-             max-width: 350px;
-             margin: 0 auto;
-             margin-top: 50px;
-             line-height: 4.3rem;
-            }
-            .intro__paragraph{
-             font-size: $defaultSize;
-             line-height: 28px;
-             padding: 0 0 200px;
-             margin: 0 auto;
-             margin-top: 30px;
-             &::before{
-                 display: none;
-             }
-            }
-         }
-        .combined-shape{
-            left: 30%;
-            max-width: 300px;
-            top: 490px;
+        .intro__text{
+            line-height: 25px;
+            font-size: 0.938rem;
         }
     }
 }
 
 @media only screen and (max-width: $mobile) {
     .intro{
-        .intro__container{
-            text-align: center;
-            display: block;
-            width: 100%;
-            padding: 20px 0px;
-            .intro__title{
-             font-size: 4rem;
-             max-width: 350px;
-             margin: 0 auto;
-             margin-top: 50px;
-             line-height: 4.3rem;
-            }
-            .intro__paragraph{
-             font-size: $defaultSize;
-             line-height: 28px;
-             padding: 0 0 200px;
-             margin: 0 auto;
-             margin-top: 30px;
-             &::before{
-                 display: none;
-             }
-            }
-         }
-        .combined-shape{
-            left: 12%;
-            max-width: 300px;
-            top: 490px;
+        padding: 70px 0px 0px;
+        max-height: 450px;
+        text-align: center;
+        .intro__title{
+            font-size: 2.5rem;
+            line-height: 40px;
         }
+        .intro__text{
+            font-size: 0.938rem;
+            line-height: 25px;
+            max-width: 90%;
+            margin: 0 auto;
+        }
+        .intro__btn{
+            margin-top: 25px;
+        }
+            
     }
 }
