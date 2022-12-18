@@ -1,0 +1,85 @@
+.about-section{
+    background-color: $defaultColor;
+    .about-section__container{
+        height: 900px;
+        h2{
+            color: #000;
+            font-size: 2.875rem;
+            line-height: 56px;
+            text-align: center;
+            padding: 133px 0 59px;
+        }
+        .about__list{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            list-style: none;
+            column-gap: 60px;
+            row-gap: 40px;
+            .about__list-item{
+                text-align: center;
+                h3{
+                    font-size: 1.375rem;
+                    font-weight: 600;
+                    color: #000;
+                    line-height: 30px;
+                    padding: 20px 0;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $tablet) {
+    .about-section__container{
+        min-height: 1000px;
+        h2{
+            font-size: 2.25rem;
+            line-height: 20px;
+            padding: 20px 0px 0px;
+        }
+        .about__list{
+            column-gap: 10px;
+            row-gap: 20px;
+            .about__list-item{
+                img{
+                    max-width: 70px;
+                    height: 70px;
+                }
+                h3{
+                    font-size: 1.125rem;
+                    line-height: 24px;
+                }
+                p{
+                    font-size: 0.875rem;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $mobile) {
+    .about-section{
+        .about-section__container{
+            min-height: 2500px;
+            h2{
+                font-size: 1.375rem;
+                line-height: 27px;
+            }
+            .about__list{
+                grid-template-columns: auto;
+                row-gap: 30px;
+                .about__list-item{
+                    img{
+                        max-width: 70px;
+                        height: 70px;
+                    }
+                    h3{
+                        font-size: 1.125rem;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+    }
+}

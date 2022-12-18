@@ -1,0 +1,78 @@
+@mixin btn {
+    background: #FCCA3A;
+    border-radius: 50px;
+    width: 308px;
+    padding: 20px 0px;
+    border: none;
+    cursor: pointer;
+    margin: 30px 0 12px;
+    display: inline-block;
+}
+@mixin btn-link {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.125rem;
+    line-height: 22px;
+    font-weight: 700;
+}
+@mixin form {
+    display: flex;
+                flex-direction: column;
+                text-align: left;
+                label{
+                    font-size: 0.875rem;
+                    line-height: 20px;
+                    color: $defaultColor; 
+                    padding: 10px 35px;
+                }
+                input{
+                    width: 308px;
+                    height: 50px;
+                    padding: 20px 25px;
+                    color: #4D4D4D;
+                    font-size: 0.875rem;
+                    line-height: 20px;
+                    background: $defaultColor;
+                    border-radius: 8px;
+                    margin: 0 auto;
+                }
+}
+@mixin form-2 {
+    display: flex;
+                width: 92%;
+                margin: 0 auto;
+                justify-content: space-between;
+                align-items: center;
+                input{
+                    width: 18px;
+                    height: 18px;
+                    cursor: pointer;
+                    background: #FCCA3A;
+                }
+                label{
+                    color: $defaultColor;
+                    strong{
+                        color: #FCCA3A;
+                    }
+                }
+}
+
+@mixin list-style {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+@mixin show-btn {
+    background-color: #1168AC;
+    border-radius: 50px;
+    border: none;
+    padding: 12px 30px;
+    cursor: pointer;
+}
+@mixin show-btn__link {
+    font-size: 1.125rem;
+    line-height: 22px;
+    color: $defaultColor;
+    text-decoration: none;
+}

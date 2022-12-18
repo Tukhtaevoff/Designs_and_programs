@@ -4,87 +4,784 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee</title>
+    <title>Arema</title>
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
+  <h1 class="visually-hidden">Arema</h1>
     <header class="header">
          <div class="container header__container">
               <a href="/">
-                <img src="./images/coffee-logo.svg" alt="coffee roaster logo">
+                <img class="header-link__img" src="./images/prof_remont_white.svg" alt="Arema logo">
               </a>
               <nav class="navbar">
-                  <ul class="navbar__list">
-                      <li class="navbar__list-item">
-                        <a class="navbar__list-link" href="#">home</a>
+                 <ul>
+                      <li>
+                        <a class="header-link" href="#">Ремонт квартир</a>
                       </li>
-                      <li class="navbar__list-item">
-                        <a class="navbar__list-link" href="#">about us</a>
+                      <li>
+                        <a href="#">Ремонт ванн</a>
                       </li>
-                      <li class="navbar__list-item">
-                        <a class="navbar__list-link" href="#">create your plan</a>
+                      <li>
+                        <a href="#">
+                            Дизайн интерьеров
+                        </a>
                       </li>
-                  </ul>
+                      <li>
+                        <a href="#">Блог</a>
+                      </li>
+                 </ul>
               </nav>
-                <button class="burger-btn">
-                    <span class="menu"></span>
-               </button>
+              <div class="links-box">
+                  <div class="header__links">
+                      <a href="tel:+7(499)4507786">+7 (499) 450 77 86 </a>
+                      <span>
+                        Ежедневно c 9:00 до 21:00	
+                        </span>
+                  </div>
+                  <button class="header__btn">
+                     <a href="#">Заказать звонок</a>
+                  </button>
+              </div>
+              <div class="menu-burger">
+                <div class="burger"></div>
+                <div class="burger"></div>
+                <div class="burger"></div>
+            </div>
+         </div>
+         <div class="header__wrapper">
+            <div class="container header__wrapper-box">
+                <nav class="header__wrapper-navbar">
+                     <ul>
+                        <li>	
+                            <a href="#">Наши награды</a>
+                             </li>
+                        <li><a href="#">Тарифы</a> </li>
+                        <li><a href="#">Калькулятор</a></li>
+                        <li><a href="#">Портфолио</a> </li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Почему мы?</a></li>
+                        <li><a href="#">Как мы работаем</a></li>
+                        <li><a href="#">Контакты</a></li>
+                     </ul>
+                </nav>
+            </div>
          </div>
          <div class="container intro">
-             <h2 class="intro__title">Great coffee <br>
-                made simple.</h2>
-                <p class="intro__text">Start your mornings with the world's best coffees. Try our expertly curated artisan coffees from our best roasters delivered directly to your door, at your schedule.</p>
-                <button class="intro__btn">
-                    Create your plan
-                </button>
+              <div class="left-intro">
+                 <span>Ремонт квартир и помещений <strong> ”под ключ” от 2 170 Руб/м² </strong> </span>
+                   <div class="payment-wrapper">
+                       <div class="payment-1">
+                           <a href="#">
+                            <img src="./images/Group.svg" alt="payment method img">
+                           </a>
+                           <p>Оплата за результат <br>
+                            или в рассрочку</p>
+                       </div>
+                       <div class="payment-2">
+                           <a href="#">
+                            <img src="./images/Group-18.png" alt="sicherheit-ein">
+                           </a>
+                           <p>Гарантия <br>
+                            36 месяцев</p>
+                    </div>
+                    </div>
+              </div>
+              <div class="right-intro">
+                <div class="form-wrapper">
+                     <h3>Хотите узнать точную <br>
+                        стоимость ремонта?</h3>
+                        <p>Оставьте заявку сейчас и получите <br> <strong>скидку 15% на все виды работ! <br>
+                            Вы сэкономите до 150 000 рублей.</strong>   </p>
+                            <form class="form">
+                                <label>Ваше имя</label>
+                                <input type="text" placeholder="Имя">
+                                <label>Контактный телефон</label>
+                                <input type="tel" placeholder="+7 (___) ___ - __ - __">
+                            </form>
+                            <button class="form__btn">
+                                 <a href="#">Отправить заявку</a>
+                            </button>
+                            <form class="form-2">
+                                <input type="checkbox">
+                                <label>Согласен c <strong>политикой конфиденциальности</strong></label>
+                            </form>
+                </div>
+              </div>
          </div>
     </header>
     <main>
-      <section class="collection">
-         <div class="container collection__container">
-          <img class="collection__img" src="./images/section-collection-img-removebg-preview.png" alt="our-collection">
-          <ul class="collection__list">
-               <li class="collection__list-item">
-                <img src="./images/collection-image.jpg" alt="item image">
-                <div class="collection__text">
-                  <h3 class="collection__list-title">Gran Espresso</h3>
-                  <p class="collection__list-text">Light and flavorful blend with cocoa <br>
-                     and black pepper for an intense <br>
-                      experience</p>
-                </div>
-               </li>
-               <li class="collection__list-item">
-                <img src="./images/collection.jpg" alt="item image">
-                <div class="collection__text">
-                  <h3 class="collection__list-title">Planalto</h3>
-                  <p class="collection__list-text">Brazilian dark roast with rich and <br>
-                     velvety body, and hints of fruits and <br> nuts</p>
-                </div>
-                
-               </li>
-               <li class="collection__list-item">
-                <img src="./images/collection-img.jpg" alt="item image">
-                <div class="collection__text">
-                  <h3 class="collection__list-title">Piccollo</h3>
-                  <p class="collection__list-text">Mild and smooth blend featuring <br>
-                     notes of toasted almond and dried <br>
-                      cherry</p>
-                </div>
-                
-               </li>
-               <li class="collection__list-item">
-                <img src="./images/collection-photo.jpg" alt="item image">
-                <div class="collection__text">
-                  <h3 class="collection__list-title">Danche</h3>
-                  <p class="collection__list-text">Ethiopian hand-harvested blend <br>
-                     densely packed with vibrant fruit <br>
-                      notes</p>
-                </div>
-                
-               </li>
-          </ul>
-         </div>
+      <section class="about-section">
+          <div class="container about-section__container">
+              <h2>Знаем все o хорошем ремонте</h2>
+              <ul class="about__list">
+                <li class="about__list-item">
+                  <img src="./images/untitled-logo-1.svg" alt="svg logo">
+                  <h3>Ремонт по ценам частной <br>
+                     бригады</h3>
+                     <p>Наши цены на 10% ниже рынка за счет <br>
+                       автоматизации процессов и большого <br>
+                      потока производства</p>
+                </li>
+                <li class="about__list-item">
+                      <img src="./images/Houzz-Logo.svg" alt="houzz logo">
+                      <h3>Полное юридическое <br>
+                         обеспечение ремонта</h3>
+                         <p>Сроки, гарантии и сумма зафиксированы <br>
+                           договором. Оплата только по факту <br>
+                            выполненных работ. Отвечаем за сроки <br>
+                             денежной компенсацией.</p>
+                </li>
+                <li class="about__list-item">
+                      <img src="./images/untitled-logo.svg" alt="svg logo">
+                      <h3>Оптовые программы <br>
+                        c поставщиками материалов</h3>
+                        <p>C нами до 30% выгоднее покупать <br>
+                          черновые и чистовые материалы, <br>
+                          сантехнику, электрику, двери и окна</p>
+                </li>
+                <li class="about__list-item">
+                      <img src="./images/untitled-logo-1.svg" alt="svg logo">
+                      <h3>Лучший клиентский сервис <br>
+                         Houzz 2019 по направлению <br>
+                          дизайн интерьера
+                      </h3>
+                </li>
+                <li class="about__list-item">
+                  <img src="./images/untitled-logo.svg" alt="svg logo">
+                  <h3>Лучшая строительная <br>
+                     компания России по Версии <br>
+                      Биржи Профессионалов <br>
+                       Петровича</h3>
+                </li>
+                <li class="about__list-item">
+                  <img src="./images/Houzz-Logo.svg" alt="houzz logo">
+                  <h3>ТОП-10 строительных <br>
+                     компаний Москвы <br>
+                    по версии Yell</h3>
+                </li>
+              </ul>
+          </div>
       </section>
+      <section class="calculator-section">
+           <div class="container calculator-section__container">
+              <div class="left-calculator">
+                   <img src="./images/min-img.png" alt="min image">
+                   <p>Руководитель отдела по работе <br>
+                    c клиентами,
+                    Иванов Леонид</p>
+              </div> 
+              <div class="right-calculator">
+                <h2>Калькулятор <br>
+                  стоимости ремонта</h2>
+                  <span>— Привет, <br>
+                    меня зовут Леонид</span>
+                    <p>Давайте узнаем стоимость Вашего <br>
+                       ремонта в компании Арема
+                    </p>
+                    <button class="calculator-btn">
+                        <a href="#">Отправить заявку</a>
+                    </button>
+              </div> 
+           </div>
+      </section>
+      <section class="consultation-section">
+            <div class="container consultation-section__container">
+                <div class="left-consultation">
+                    <h3> <strong>Бесплатная консультация</strong> <br> 
+                      по вопросам ремонта</h3>
+                      <div class="consultation-wrapper">
+                           <ul>
+                              <li>
+                                   <img src="./images/clock.svg" alt="clock">
+                                   <span>Работаем без выходных, <br>
+                                    приедем тогда, когда <br>
+                                    удобно Вам</span>
+                              </li>
+                              <li>
+                                     <img src="./images/construction.svg" alt="construction">
+                                     <span>Индивидуальная консультация <br> 
+                                      от инженера и дизайнера <br>
+                                      на личной встрече</span>
+                              </li>
+                              <li>
+                                <img src="./images/clock.svg" alt="clock">
+                                <span>Смета без скрытых платежей, <br>
+                                   считаем без ухищрений и только <br> то, что нужно Вам</span>
+                              </li>
+                           </ul>
+                        <div class="form-wrapper">
+                            <form class="form">
+                              <label>Ваше имя</label>
+                              <input type="text" placeholder="Имя">
+                              <label>Контактный телефон</label>
+                              <input type="tel" placeholder="+7 (___) ___ - __ - __">
+                          </form>
+                          <button class="form__btn">
+                               <a href="#">Записаться</a>
+                          </button>
+                          <form class="form-2">
+                              <input type="checkbox">
+                              <label>Согласен c <strong>политикой конфиденциальности</strong></label>
+                          </form>
+                        </div>
+                      </div>
+                </div>
+                      <img class="worker-img" src="./images/Worker-img.png" alt="worker image">
+            </div>
+      </section>
+      <section class="team">
+        <div class="container team__container">
+        <div class="team__img-wrapper"></div>
+        <div class="team__wrapper">
+            <div class="team__text-wrapper">
+                <h2>Команда</h2>
+                <h3>Sergey Bunyakov</h3>
+                <p>Лучший инженер-сметчик</p>
+                <p class="team__text">Посчитал более 500 смет и заключил около 200 договоров. Имеет высшее инженерное образование в институте МГСУ. В работе добросовестный 
+                    и внимательный. 
+                    
+                    До этого 3 года работал прорабом. Следит за современными тенденциями 
+                    и технологиями в ремонте и дизайне квартир. Подскажет на чем сэкономить 
+                    и составит точную смету.</p>
+                <p><strong>Стаж:</strong>6 лет</p>
+                <p><strong>Достижения:</strong>Сократил срок проведения ремонта на своем участке на 20%</p>
+                <p><strong>Награды:</strong>Лучший инженер-сметчик 2019 года по версии “Компания”</p>
+            </div>
+            <ul class="team__list">
+                <li class="team__list-item">
+                    <button class="team__list-btn team__list-btn--left"></button>
+                </li>
+                <li class="team__list-item">
+                   <div class="team__list-content">
+                    <img class="team__list-img" src="./images/person.png" alt="Sergey Bunyakov" width="160" height="160">
+                    <div class="team__text-wrapper team__text-wrapper--active">
+                        <h2>Команда</h2>
+                        <h3>Sergey Bunyakov</h3>
+                        <p>Лучший инженер-сметчик</p>
+                        <p class="team__text">Посчитал более 500 смет и заключил около 200 договоров. Имеет высшее инженерное образование в институте МГСУ. В работе добросовестный 
+                            и внимательный. 
+                            
+                            До этого 3 года работал прорабом. Следит за современными тенденциями 
+                            и технологиями в ремонте и дизайне квартир. Подскажет на чем сэкономить 
+                            и составит точную смету.</p>
+                        <p><strong>Стаж:</strong>6 лет</p>
+                        <p><strong>Достижения:</strong>Сократил срок проведения ремонта на своем участке на 20%</p>
+                        <p><strong>Награды:</strong>Лучший инженер-сметчик 2019 года по версии “Компания”</p>
+                    </div>
+                   </div>
+                    <p class="team__item-desc">Посчитал более 500 смет и заключил около 200 договоров. Имеет высшее инженерное образование в институте МГСУ. В работе добросовестный 
+                        и внимательный. 
+                        
+                        До этого 3 года работал прорабом. Следит за современными тенденциями 
+                        и технологиями в ремонте и дизайне квартир. Подскажет на чем сэкономить 
+                        и составит точную смету.</p>
+                    <a class="team__list-link" href="#">Подробнее</a>
+                </li>
+                <li class="team__list-item team__list-item--man">
+                    <img class="team__list-img" src="./images/man.png" alt="Andrey" width="160" height="160">
+                </li>
+                <li class="team__list-item team__list-item--woman">
+                    <img class="team__list-img" src="./images/woman.png" alt="Valentina" width="160" height="160">
+                </li>
+                <li class="team__list-item">
+                    <button class="team__list-btn team__list-btn--right"></button>
+                </li>
+            </ul>
+        </div>
+        </div>
+        </section>
+        <section class="about-us">
+            <div class="container about-us__container">
+                <h2>O нас</h2>
+                <div class="about-us__wrapper">
+                    <div class="about-us__menu">
+                       <button class="menu-btn menu-btn--first">
+                            <a class="menu-btn__link" href="#">Философия</a>
+                       </button>
+                       <button class="menu-btn">
+                            <a class="menu-btn__link" href="#">Ценности</a>
+                       </button>
+                       <button class="menu-btn">
+                            <a class="menu-btn__link" href="#">История</a>
+                       </button>
+                       <button class="menu-btn">
+                             <a class="menu-btn__link" href="#">Отбор мастеров</a>
+                       </button>
+                    </div>
+                    <div class="about-us__box">
+                          <div class="about-us__left"></div>
+                          <div class="about-us__right">
+                               <p>Мы ставим перед собой цель стать ведущей компанией,  предоставляющей комплексные услуги Проектирования,   Производства и Строительства в России. 
+
+                                Вместе мы реализуем проекты,  отвечающие международным стандартам и прокладываем путь к пониманию потребностей Клиента,  основываясь на фундаментальных ценностях,  ведущих к достижению нашей цели.    Мы всегда уверены в своей компании и ее услугах,  поэтому стремимся стать для клиентов и партнеров островом    надежности в нестабильном рыночном пространстве.  Мы умеем вовремя реагировать на изменения и быть гибкими,  поэтому мы с уверенностью смотрим в будущее!</p>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="feedbacks">
+            <div class="container feedbacks__container">
+                 <h2>Отзывы наших клиентов</h2>
+                 <p class="feedbacks__text">Для нас важно, чтобы Вы улыбались после ремонта!</p>
+                 <ul class="feedbacks__list">
+                   <li class="feedbacks__list-item">
+                       <button class="feedbacks__list-btn"></button>
+                   </li>
+                   <li class="feedbacks__list-item feedbacks__item">
+                        <button class="feedbacks__video-btn"></button>
+                   </li>
+                   <li class="feedbacks__list-item">
+                    <button class="feedbacks__list-btn feedbacks__list-btn--right"></button>
+                   </li>
+                 </ul>
+                 <p class="client-desc">Очаровательная Ольга Владимировна</p>
+                 <div class="ellipses">
+                      <span class="circle circle--first"></span>
+                      <span class="circle"></span>
+                      <span class="circle"></span>
+                      <span class="circle"></span>
+                      <span class="circle"></span>
+                      <span class="circle"></span>
+                      <span class="circle"></span>
+                 </div>
+                 <ul class="actions-list">
+                     <li class="actions-list__item">
+                            <h3>Акция “Расскажи другу”</h3>
+                            <p>Предложите другу заказать <br>
+                              ремонт в компании “Арема” и получите <br> 
+                             <strong>5000 рублей,</strong>  a друг получит <strong>скидку 5%</strong> </p>
+                             <button class="actions__btn">
+                                     <a href="#">Участвовать</a>
+                             </button>
+                     </li>
+                     <li class="actions-list__item">
+                         <h3 class="actions__title">Акция “Честно об “Ареме””</h3>
+                         <p>Оставьте честный отзыв о работе <br>
+                          нашей компании и получите <strong>скидку 5% </strong> <br>
+                          О своем желании поучавствовать в акции <br>
+                          “Честно об “Ареме””необходимо сообщить <br>
+                           инженеру-сметчику до заключения договора</p>
+                           <button class="actions__btn actions__btn--middle">
+                               <a href="#">Участвовать</a>
+                           </button>
+                     </li>
+                     <li class="actions-list__item">
+                      <h3>Акция “Вот это ремонт!”</h3>
+                      <p>Пригласи нас сделать фотосессию <br>
+                        своей квартиры после ремонта <br>
+                        и получите <strong> 2000 рублей</strong></p>
+                        <button class="actions__btn">
+                            <a href="#">Участвовать</a>
+                        </button>
+                     </li>
+                 </ul>
+            </div>
+        </section>
+        <section class="works">
+          <button class="works-btn">
+                 <a href="#">Хочу такой ремонт</a>
+          </button>
+           <div class="container works__container">
+                <h2>Выполненные работы</h2>
+                <p class="works__text">Сейчас в альбоме нашей компании более 800 объектов</p>
+                <ul class="works__list">
+                      <li class="works__list-item">
+                        <img src="./images/Room-1.png" alt="room">
+                        <h3>Ремонт 1 комнатной квартиры <br>
+                          — 37 м²</h3>
+                          <p>Видное, улица Березовая, 8</p>
+                          <span>277 540 руб.</span>
+                          <a class="works__list-link" href="#">
+                            Посмотреть весь проект
+                          </a>
+                      </li>
+                      <li class="works__list-item">
+                        <img src="./images/Room-2.png" alt="room">
+                        <h3>Ремонт 1 комнатной квартиры 
+                           <br>
+                           — 38 м²</h3>
+                           <p>Москва, улица Коломенская, 18</p>
+                           <span>296 400 руб.</span>
+                           <a class="works__list-link" href="#">
+                            Посмотреть весь проект
+                          </a>
+                      </li>
+                      <li class="works__list-item">
+                        <img src="./images/Room-3.png" alt="room">
+                        <h3>Ремонт 2-х комнатной квартиры <br>
+                          — 45 м²</h3>
+                          <p>Москва, улица Широкая, 35</p>
+                          <span>305 960 руб.</span>
+                          <a class="works__list-link" href="#">
+                            Посмотреть весь проект
+                          </a>
+                      </li>
+                      <li class="works__list-item">
+                        <img src="./images/Room-4.png" alt="room">
+                        <h3>Ремонт 3-х комнатной квартиры <br>
+                          — 72 м²</h3>
+                          <p>Москва, Проспект Андропова, 42к1</p>
+                          <span>416 000 руб.</span>
+                          <a class="works__list-link" href="#">
+                            Посмотреть весь проект
+                          </a>
+                      </li>
+                      <li class="works__list-item">
+                        <img src="./images/Room-5.png" alt="room">
+                        <h3>Ремонт 1 комнатной квартиры 
+                           <br>
+                           — 35 м²</h3>
+                           <p>Красногорск, ул.Авангардная, 6</p>
+                           <span>213 060 руб.</span>
+                           <a class="works__list-link" href="#">
+                            Посмотреть весь проект
+                          </a>
+                      </li>
+                      <li class="works__list-item">
+                        <img src="./images/Room-6.png" alt="room">
+                        <h3>Ремонт студии
+                          — 39 м²</h3>
+                          <p>Москва, Большой Черкасский переулок, 13/1</p>
+                          <span>277 540 руб.</span>
+                          <a class="works__list-link" href="#">
+                            Посмотреть весь проект
+                          </a>
+                      </li>
+                </ul>
+                <button class="show-btn">
+                  <a class="show-btn__link" href="#">Показать еще</a>
+                </button>
+           </div>
+        </section>
+        <section class="letter">
+              <div class="container letter__container">
+                  <div class="letter__left-side">
+                     <h2>Письмо директору</h2>
+                     <p>Спорная ситуация c сотрудником? <br>
+                       Напишите напрямую руководству. <br>
+                      Ответ в день обращения</p>
+                      <button class="letter-btn">
+                         <a class="letter-btn__link" href="#">Написать письмо</a>
+                      </button>
+                      <p class="small-desc">Генеральный директор “Арема”, <br>
+                         Беляков Филипп
+                      </p>
+                  </div>
+                  <div class="letter__right-side">
+                    <p class="small-desc-2">Генеральный директор “Арема”, <br>
+                      Беляков Филипп
+                   </p>
+                    <img src="./images/Filipp-Belyakov-3png.png" alt="Filipp Belyakov">
+                  </div>
+              </div>
+        </section>
+        <section class="stages">
+               <div class="container stages__container">
+                   <h2>Этапы работы</h2>
+                   <ol class="stages__list">
+                        <li class="stages__list-item"></li>
+                        <li class="stages__list-item"></li>
+                        <li class="stages__list-item"></li>
+                        <li class="stages__list-item"></li>
+                        <li class="stages__list-item stages__list-item--last"></li>
+                  </ol>
+                  <div class="stages__wrapper">
+                       <div class="stages__wrapper-list">
+                           <button class="stages__wrapper-btn stages__wrapper-btn--first">
+                                 <a href="#">1. Заполняете
+                                   заявку</a>
+                           </button>
+                           <button class="stages__wrapper-btn">
+                                <a href="#">2. Встречаемся <br> 
+                                  c Вами</a>
+                           </button>
+                           <button class="stages__wrapper-btn">
+                                 <a href="#">3. Подписываем <br>
+                                   договор</a>
+                           </button>
+                           <button class="stages__wrapper-btn">
+                            <a href="#">4. Приступаем <br>
+                              к работам</a>
+
+                           </button>
+                           <button class="stages__wrapper-btn">
+                                 <a href="#">5. Сдаем <br>
+                                  объект</a>
+                           </button>
+                       </div>
+                       <div class="stages__wrapper-box">
+                            <div class="stages__wrapper-left">
+                              <img src="./images/pagina-img.png" alt="pagina">
+                            </div>
+                            <div class="stages__wrapper-right">
+                                  <p>После заполнения заявки наш менеджер созванивается с Вами назначает бесплатный выезд специалиста. Он так же консультирует Вас по всем вопросам и предоставляет необходимые материалы. <br> <br> Если Вы хотите отменить или перенести встречу, пожалуйста, предупредите нас за сутки.Он так же консультирует Вас по всем вопросам и предоставляет необходимые материалы.После заполнения заявки наш менеджер созванивается с Вами назначает бесплатный выезд специалиста. </p>
+                                  <a href="#">
+                                    Заполнить заявку
+                                  </a>
+                            </div> 
+                       </div>
+                  </div>
+               </div>
+        </section>
+        <section class="cooperation">
+             <div class="container cooperation__container">
+                  <h2>Сотрудничество c производителями</h2>
+                  <ul class="cooperation__list">
+                     <li class="cooperation__list-item">
+                      <img src="./images/knauf-logo.svg" alt="knauf company logo">
+                      <p>Строительные материалы, гипсокартон, штукатурка</p>
+                     </li>
+                     <li class="cooperation__list-item">
+                      <img src="./images/Barlinek.svg" alt="barlinek logo">
+                      <p>Паркетная доска, деревянный пол, напольные покрытия</p>
+                     </li>
+                     <li class="cooperation__list-item">
+                      <img src="./images/Bravo-logo.svg" alt="Bravo logo">
+                      <p>Двери, фурнитура</p>
+                     </li>
+                     <li class="cooperation__list-item">
+                      <img src="./images/Italon-logo.svg" alt="Italon logo">
+                      <p>Керамические изделия 
+                        и сантехническое оборудование</p>
+                     </li>
+                     <li class="cooperation__list-item">
+                      <img src="./images/kerami-marazzi.svg" alt="kerami marazzi">
+                      <p>Керамические изделия 
+                        и оборудование</p>
+                     </li>
+                     <li class="cooperation__list-item">
+                      <img src="./images/Egger.svg" alt="egger logo">
+                      <p>Строительные материалы, мебель, напольные покрытия</p>
+                     </li>
+                     <li class="cooperation__list-item">
+                      <img src="./images/kronotex.svg" alt="kronotex logo">
+                      <p>Линолеум, ламинат, 
+                        паркетная доска </p>
+                     </li>
+                     <li class="cooperation__list-item">
+                      <img src="./images/tarkett.svg" alt="tarkett logo">
+                      <p>Плитка, линолеум, ламинат, паркетная доска</p>
+                     </li>
+                  </ul>
+                  <button class="show-button">
+                    <a href="#">Показать еще</a>
+                  </button>
+             </div>
+        </section>
+        <section class="renovations">
+              <div class="container renovations__container">
+                  <span class="renovations__title">Мы делаем настоящий ремонт <br>
+                    под ключ, что это значит?</span>
+                    <ul class="renovations__list">
+                        <li class="renovations__list-item">
+                          <img class="renovations__list-img" src="./images/sale-room-1.png" alt="sale room">
+                          <h3>Двери</h3>
+                          <a class="sale-link" href="#">Рассчитать co скидкой</a>
+                          <img class="percentage" src="./images/persantage-14.svg" alt="14 percent">
+                        </li>
+                        <li class="renovations__list-item">
+                          <img class="renovations__list-img" src="./images/sale-room-2.png" alt="sale room">
+                          <h3>Напольные покрытия</h3>
+                          <a class="sale-link" href="#">Рассчитать co скидкой</a>
+                          <img class="percentage" src="./images/persantage-8.svg" alt="8 percent">
+                        </li>
+                        <li class="renovations__list-item">
+                          <img class="renovations__list-img" src="./images/sale-room-3.png" alt="sale room">
+                          <h3>Окна</h3>
+                        </li>
+                        <li class="renovations__list-item">
+                          <img class="renovations__list-img" src="./images/sale-room-4.png" alt="sale room">
+                          <h3>Кондиционеры</h3>
+                        </li>
+                        <li class="renovations__list-item">
+                          <img class="renovations__list-img" src="./images/sale-room-5.png" alt="sale room">
+                          <h3>Кухни</h3>
+                          <a class="sale-link" href="#">Рассчитать co скидкой</a>
+                          <img class="percentage" src="./images/persantage-10.svg" alt="10 percent">
+                        </li>
+                        <li class="renovations__list-item">
+                          <img class="renovations__list-img" src="./images/sale-room-6.png" alt="sale room">
+                          <h3>Мебель</h3>
+                          <a class="sale-link" href="#">Рассчитать co скидкой</a>
+                          <img class="percentage" src="./images/persantage-5.svg" alt="5 percent">
+                        </li>
+                        <li class="renovations__list-item">
+                          <img class="renovations__list-img" src="./images/sale-room-7.png" alt="sale room">
+                          <h3>Электрика</h3>
+                          <a class="sale-link" href="#">Рассчитать co скидкой</a>
+                          <img class="percentage" src="./images/persantage-7.svg" alt="7 percent">
+                        </li>
+                        <li class="renovations__list-item">
+                          <img class="renovations__list-img" src="./images/sale-room-8.png" alt="sale room">
+                          <h3>Сантехника</h3>
+                          <a class="sale-link" href="#">Рассчитать co скидкой</a>
+                          <img class="percentage" src="./images/persantage-11.svg" alt="11 percent">
+                        </li>
+                        <li class="renovations__list-item">
+                          <img class="renovations__list-img" src="./images/sale-room-9.png" alt="sale room">
+                          <h3>Черновые материалы</h3>
+                        </li>
+                    </ul>
+                    <button class="show-more">
+                      <a href="#">Показать еще</a>
+                    </button>
+              </div>
+        </section>
+        <section class="quotes">
+             <div class="container quotes__container">
+                 <div class="left-quotes">
+                  <img src="./images/min-img.png" alt="min image">
+                  <p>Руководитель отдела по работе <br>
+                   c клиентами,
+                   Иванов Леонид</p>
+                 </div>
+                 <div class="right-quotes">
+                       <h2 class="right-quotes__title">Получите подробную <br>
+                         смету бесплатно</h2>
+                         <p class="right-quotes__text">Закажите бесплатный выезд специалиста для консультации и расчета сметы</p>
+                         <ul class="quotes__list">
+                             <li class="quotes__list-item">
+                              Приедем в удобное время
+                             </li>
+                             <li class="quotes__list-item">
+                              Проведем точные измерения
+                             </li>
+                             <li class="quotes__list-item">
+                              Уложимся в бюджет
+                             </li>
+                         </ul>
+                         <div class="quotes__wrapper">
+                          <form class="quotes__form">
+                            <label>Контактный телефон</label>
+                            <input type="tel" placeholder="+7 (___) ___ - __ - __">
+                        </form>
+                        <button class="quotes__btn">
+                             <a href="#">Отправить заявку</a>
+                        </button>
+                        <form class="quotes__form-2">
+                            <input type="checkbox">
+                            <label>Согласен c <strong>политикой конфиденциальности</strong></label>
+                        </form>
+                         </div>
+                 </div>
+             </div>
+        </section>
+        <section class="questions">
+             <div class="container questions__container">
+                 <h2 class="questions__title">Вопросы и ответы</h2>
+                 <ul class="questions__list">
+                    <li class="questions__list-item">
+                      <span class="question">Какой порядок оплаты?</span>
+                      <button class="questions__list-btn questions__list-btn--first"></button>
+                    </li>
+                    <li class="questions__list-item">
+                      <div>
+                        <span class="question">Стоимость в смете окончательная?</span>
+                        <p class="invisible-text">Смета действительна 60 дней и в процессе ремонта не меняется. Изменения возможны в случае вашего желания произвести дополнительные работы или использовать другие материалы.</p>
+                      </div>
+                      <button class="questions__list-btn1"></button>
+                    </li>
+                    <li class="questions__list-item">
+                      <span class="question">Как я смогу убедиться в безопасности и качестве 
+                        производимых работ?</span>
+                      <button class="questions__list-btn questions__list-btn--second"></button>
+                    </li>
+                    <li class="questions__list-item">
+                      <span class="question">Кто будет ответственен за качество работ?</span>
+                      <button class="questions__list-btn"></button>
+                    </li>
+                    <li class="questions__list-item">
+                      <span class="question">Как можно следить за ходом ремонта?</span>
+                      <button class="questions__list-btn"></button>
+                    </li>
+                    <li class="questions__list-item">
+                      <span class="question">Есть ли у Вас беспроцентная рассрочка?</span>
+                      <button class="questions__list-btn"></button>
+                    </li>
+                    <li class="questions__list-item">
+                      <span class="question">Могу ли я посмотреть объекты в работе?</span>
+                      <button class="questions__list-btn"></button>
+                    </li>
+                 </ul>
+                 <button class="more-btn">
+                  <a href="#">Показать еще</a>
+                </button>
+             </div>
+        </section>
+        <section class="appeal">
+              <div class="container appeal__container">
+                  <div class="left-appeal">
+                       <h2 class="appeal__title">Ремонт, o котором Вы <br>
+                         мечтали, начинается здесь</h2>
+                         <p class="appeal__text">Остались вопросы? Оставьте заявку, 
+                          мы свяжемся c Вами в течении 15 минут
+                          </p>
+                          <form class="appeal__form">
+                            <label>Ваше имя</label>
+                            <input type="text" placeholder="Имя">
+                            <label>Контактный телефон</label>
+                            <input type="tel" placeholder="+7 (___) ___ - __ - __">
+                        </form>
+                        <button class="appeal__btn">
+                             <a href="#">Отправить заявку</a>
+                        </button>
+                        <form class="appeal__form-2">
+                            <input type="checkbox">
+                            <label>Согласен c <strong>политикой конфиденциальности</strong></label>
+                        </form>
+                        <p class="engineer-desc">Инженер-сметчик, Денис Фролов</p>
+                  </div>
+                  <div class="right-appeal">
+                      <img src="./images/human.png" alt="human">
+                  </div>
+              </div>
+        </section>
+        <section class="map">
+            <div class="container map__container">
+                  <h2 class="map__title">Мы всегда на связи</h2>
+                  <div class="map__wrapper">
+                    <div class="map-box">
+                    </div>
+                    <div class="location-box">
+                      <span>Адрес главного офиса:</span>
+                      <p>Москва, Проспект мира, дом 101c1
+                        (5 минут от метро Алексеевская) Ежедневно c 9:00 до 21:00</p>
+                        <span>Контактный телефон:</span> <br>
+                        <a href="tel:+7(499)521-42-49">+7 (499) 521-42-49</a> <br>
+                        <span>Почта:</span>
+                        <p>Гарантийное обслуживание support</p>
+                        <a href="mailto:@arema-group.ru">@arema-group.ru</a>  
+                         <p>Любые другие вопросы</p>
+                         <a href="mailto:info@arema-group.ru">info@arema-group.ru</a> <br>
+                         <span>Наши социальные сети:</span>
+                         <ol class="social-media">
+                          <li class="social-media__item">
+                            <img src="./images/social-media-1.svg" alt="social-media">
+                          </li>
+                          <li class="social-media__item">
+                            <img src="./images/social-media-2.svg" alt="social-media">
+                          </li>
+                          <li class="social-media__item">
+                            <img src="./images/social-media-3.svg" alt="social-media">
+                          </li>
+                          <li class="social-media__item">
+                            <img src="./images/social-media-4.svg" alt="social-media">
+                          </li>
+                          <li class="social-media__item">
+                            <img src="./images/social-media-5.svg" alt="social-media">
+                          </li>
+                         </ol>
+                    </div>
+                  </div>
+            </div>
+        </section>
     </main>
+    <footer class="footer">
+         <div class="container footer__container">
+              <p class="footer__text">© AREMA профессиональный ремонт квартир в Москве и МО. ИНН 7716912681 ОГРН 1187746496233</p>
+              <span class="privacy-policy">Политика конфиденциальности</span>
+         </div>
+    </footer>
 </body>
 </html>

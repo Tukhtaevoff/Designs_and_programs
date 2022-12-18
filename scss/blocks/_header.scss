@@ -1,70 +1,125 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .header{
+    background: url(../../images/Фон.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 786px;
     .header__container{
-        align-items: center;
-        justify-content: space-between;
-        display: flex;
-        height: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+     -ms-flex-align: center;
+    align-items: center;
+    padding: 20px 0px;
+    justify-content: space-between;
         .navbar{
-            width: 300px;
-            .navbar__list{
-                display: flex;
-                justify-content: space-between;
-                list-style: none;
-                width: 100%;
-                .navbar__list-item{
+                width: 40%;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+            ul{
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-pack: justify;
+                        -ms-flex-pack: justify;
+                            justify-content: space-between;
+                    -webkit-box-align: center;
+                        -ms-flex-align: center;
+                            align-items: center;
+                li{
+                        list-style: none;
                     a{
-                        text-transform: uppercase;
-                        color: #83888F;
-                        font-size: 0.75rem;
-                        line-height: 15px;
-                        font-weight: 700;
-                        text-decoration: none;
-                        letter-spacing: 0.9px;
+                            text-decoration: none;
+                            color: $defaultColor;
+                            line-height: 20px;
+                            font-size: 1rem;
                     }
-                    a:active{
-                        color: #333D4B;
+                    a:hover{
+                        color: #FCCA3A;
                     }
+                    .header-link{
+                        color: #FCCA3A;
+                    }
+                }
+                
+            }
+        }
+        .links-box{
+            display: flex;
+            align-items: center;
+            width: 33%;
+            justify-content: space-between;
+            .header__links{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                color: $defaultColor;
+                a{
+                    font-size: 1.375rem;
+                    text-decoration: none;
+                    color: $defaultColor;
+                }
+                span{
+                    font-size: 0.875rem;
+                }
+            }
+            .header__btn{
+                @include show-btn;
+                a{
+                    @include show-btn__link;
                 }
             }
         }
-        .burger-btn{
+        .menu-burger{
+            width: 29px;
+            height: 26px;
             display: none;
-            width: 40px;
-            height: 30px;
-            background-color: $defaultColor;
-            border: none;
-            cursor: pointer;
-            position: relative;
-            .menu{
+            flex-direction: column;
+            .burger{
                 width: 100%;
-                height: 6px;
-                border-radius: 1.5px;
-                background-color: #333D4B;
-                border: none;
-                display: block;
-                position: relative;
-    
-                &::before{
-                    content: '';
-                    display: inherit;
-                    border-radius: 1.5px;
-                    background-color: #333D4B;
-                    border: none;
-                    width: 100%;
-                    height: 6px;
-                    position: absolute;
-                    top: -10px;
-                }
-                &::after{
-                    content: '';
-                    display: inherit;
-                    border-radius: 1.5px;
-                    background-color: #333D4B;
-                    border: none;
-                    width: 100%;
-                    height: 6px;
-                    position: absolute;
-                    top: 10px;
+                height: 5.5px;
+                margin-top: 5px;
+                border-radius: 30px;
+                background-color: #FCCA3A;
+            }
+            .burger:first-child{
+                margin-top: 0px;
+            }
+        }
+    }
+    .header__wrapper{
+        background: rgba(252, 202, 58, 0.8);
+        height: 40px;
+        width: 100%;
+        .header__wrapper-box{
+            .header__wrapper-navbar{
+                width: 85%;
+                margin: 0 auto;
+                ul{
+                    display: flex;
+                    justify-content: space-between;
+                    list-style: none;
+                    li{
+                        margin-top: 8px;
+                        text-align: center;
+                        a{
+                            text-decoration: none;
+                            color: #000;
+                            padding-top: 15px;
+                            font-size: 1rem;
+                            font-weight: 700;
+                            line-height: 20px;
+                        }
+                    }
                 }
             }
         }
@@ -73,19 +128,73 @@
 
 @media only screen and (max-width: $tablet) {
     .header{
+        min-height: 921px;
+
         .header__container{
-            padding: 0px;
-        }
-    }
-}
-@media only screen and (max-width: $mobile) {
-    .header{
-        .header__container{
+            justify-content: space-between;
             .navbar{
                 display: none;
             }
-            .burger-btn{
+            .links-box{
+                width: 100%;
+                .header__links{
+                    width: 100%;
+                }
+                .header__btn{
+                    width: 230px;
+                    height: 40px;
+                    padding: 0;
+                    margin-right: 70px;
+                    a{
+                        font-size: 0.875rem;
+                    }
+                }
+            }
+            .menu-burger{
                 display: block;
+                width: 30px;
+                margin-right: 20px;
+                .burger{
+                    width: 30px;
+                }
+            }
+            
+        }
+        .header__wrapper{
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: $mobile) {
+    .header__container{
+        position: relative;
+        justify-content: space-between;
+        .header-link__img{
+            min-width: 115px;
+            max-height: 33px;
+        }
+        .links-box{
+            position: absolute;
+            top: 70px;
+            min-width: 100%;
+            padding: 0;
+            .header__links{
+                min-width: 140px;
+                a{
+                    font-size: 0.875rem;
+                }
+                span{
+                    font-size: 0.625rem;
+                }
+            }
+            .header__btn{
+                margin-left: 20px;
+                min-width: 140px;
+                padding: 0;
+                a{
+                    font-size: 0.75rem;
+                }
             }
         }
     }

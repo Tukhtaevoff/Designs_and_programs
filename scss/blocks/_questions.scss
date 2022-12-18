@@ -1,0 +1,200 @@
+.questions{
+    background-image: url(../../images/quustions-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+
+    .questions__container{
+        height: 1040px;
+        padding-top: 131px;
+        .questions__title{
+            color: $defaultColor;
+            font-size: 2.875rem;
+            line-height: 56px;
+            font-weight: 700;
+            text-align: center;
+            padding: 0px 0px 30px 0px;
+        }
+        .questions__list{
+            list-style: none;
+            display: grid;
+            grid-template-columns: auto;
+            max-width: 860px;
+            margin: 0 auto;
+            row-gap: 5px;
+            .questions__list-item{
+                border-radius: 8px;
+                display: flex;
+                justify-content: space-between;
+                background-color: #4D4D4D;
+                padding: 20px 19px 22px;
+                .question{
+                    font-size: 1.375rem;
+                    font-weight: 700;
+                    color: $defaultColor;
+                    line-height: 30px;
+                    width: 600px;
+                }
+                .invisible-text{
+                    color: $defaultColor;
+                    font-size: 1rem;
+                    line-height: 22px;
+                    width: 700px;
+
+                }
+                .questions__list-btn{
+                    width: 20px;
+                    height: 20px;
+                    margin: 5px 0px 0px;
+                    position: relative;
+                    background: none;
+                    border: none;
+                    cursor: pointer;
+                    &::before{
+                        content: '';
+                        width: 18px;
+                        height: 18px;
+                        position: absolute;
+                        left: -1.5px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        background-image: url(../../images/add-img.svg);
+                        background-position: center;
+                        background-size: cover;
+                        display: block;
+                        background-repeat: no-repeat;
+                    }
+                }
+                .questions__list-btn1{
+                    width: 20px;
+                    height: 20px;
+                    margin: 5px 0px 0px;
+                    position: relative;
+                    background: none;
+                    border: none;
+                    cursor: pointer;
+
+                    &::before{
+                        content: '';
+                        width: 27px;
+                        height: 27px;
+                        position: absolute;
+                        top: 50%;
+                        right: 0%;
+                        transform: translateY(-50%);
+                        background-image: url(../../images/minimize-img.svg);
+                        background-position: center;
+                        background-size: cover;
+                        display: block;
+                        background-repeat: no-repeat;
+                    }
+                }
+                
+            }
+        }
+        .more-btn{
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: $tablet) {
+    .questions{
+        .questions__container{
+            min-height: 829px;
+            padding: 74px 0px 0px 0px;
+            .questions__title{
+                font-size: 2.25rem;
+                line-height: 44px;
+            }
+            .questions__list{
+                max-width: 720px;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $mobile) {
+    .questions{
+        .questions__container{
+            padding: 70px 0px 0px 0px;
+            max-height: 475px;
+            .questions_title{
+                font-size: 1.375rem;
+                line-height: 27px;
+            }
+            .questions__list{
+                margin-top: 30px;
+                max-width: 100%;
+                .questions__list-item{
+                    position: relative;
+                     display: none;
+                     justify-content: space-between;
+                     min-width: 288px;
+
+                     &:first-child{
+                        display: block;
+                     }
+                     &:nth-child(2){
+                        display: block;
+                     }
+                     &:nth-child(3){
+                        display: block;
+                     }
+                    .question{
+                        font-size: 0.8rem;
+                        line-height: 18px;
+                    }
+                    .invisible-text{
+                        font-size: 0.75rem;
+                        line-height: 22px;
+                        max-width: 100%;
+                    }
+                    .questions__list-btn{
+                        max-width: 16px;
+                        min-height: 16px;
+                        position: absolute;
+                        
+                        &::before{
+                            max-width: 14px;
+                            min-height: 14px;
+
+                        }
+                    }
+                    .questions__list-btn--first{
+                        left: 290px;
+                        bottom: 20px;
+                    }
+                    .questions__list-btn1{
+                        min-width: 16px;
+                        max-height: 16px;
+                        position: absolute;
+                        left: 290px;
+                        top: 15px;
+                        &::before{
+                            min-width: 14px;
+                            max-height: 14px;
+                        }
+                    }
+                    .questions__list-btn--second{
+                        left: 290px;
+                        top: 15px;
+                    }
+                }
+            }
+            .more-btn{
+                display: block;
+                @include show-btn;
+                margin: 40px 0px 0px 25%;
+                a{
+                    @include show-btn__link;
+                }
+            }
+        }
+    }
+}

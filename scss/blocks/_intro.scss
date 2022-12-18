@@ -1,81 +1,212 @@
 .intro{
-    height: 600px;
-    background-image: url(../../images/Bitmap.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 80px 0px 0px 86px;
-    border-radius: 10px;
-    .intro__title{
-        font-size: 4.5rem;
-        font-family: 'Fraunces';
-        color: #FEFCF7;
-        font-weight: 900;
-        line-height: 72px;
-        font-style: normal;
+    display: flex;
+    .left-intro{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding: 172px 0px;
+        span{
+            font-size: 3.125rem;
+            font-weight: 700;
+            color: $defaultColor;
+            line-height: 61px;
+            strong{
+            color: #FCCA3A;
+            }
+        }
+        .payment-wrapper{
+            margin: 50px 0px;
+            display: flex;
+            width: 85%;
+            justify-content: space-between;
+            align-items: center;
+            .payment-1{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                p{
+                    font-size: 1.375rem;
+                    color: $defaultColor;
+                    font-weight: 600;
+                    padding: 0px 0px 0px 20px;
+                }
+            }
+            .payment-2{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                p{
+                    font-size: 1.375rem;
+                    color: $defaultColor;
+                    font-weight: 600;
+                    padding: 0px 0px 0px 20px;
+                }
+            }
+        }
     }
-    .intro__text{
-        font-size: 1rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 26px;
-        color: #FEFCF7;
-        opacity: 0.8;
-        max-width: 445px;
-        padding: 0px 0px 30px 0px;
-    }
-    .intro__btn{
-        padding: 15px 31px 16px;
-        color: #FEFCF7;
-        font-size: 1.125rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 25px;
-        border: none;
-        background-color: #0E8784;
-        border-radius: 6px;
-    }
-    .intro__btn:hover{
-        cursor: pointer;
-    }
-    .intro__btn:active{
-        background-color: #66D2CF; 
+    .right-intro{
+        width: 50%;
+        .form-wrapper{
+            width: 368px;
+            height: 482px;
+            margin: 84px 0px 0px 230px;
+            background: #4D4D4D;
+            border-radius: 8px;
+            text-align: center;
+            h3{
+                font-size: 1.375rem;
+                color: $defaultColor;
+                line-height: 27px;
+                font-weight: 600;
+                padding: 20px 0px 0px;
+            }
+            p{
+                font-size: 1rem;
+                color: $defaultColor;
+                font-weight: 500;
+                strong{
+                    color: #FCCA3A;
+                }
+            }
+            .form{
+                @include form;
+            }
+            .form__btn{
+                @include btn;
+                a{
+                    @include btn-link;
+                }
+            }
+            .form-2{
+                @include form-2;
+            }
+        }
     }
 }
 
-@media only screen and (max-width: $tablet) {
+@media only screen and (max-width: $tablet){
     .intro{
-        max-height: 500px;
-        .intro__title{
-            font-size: 3rem;
-            line-height: 58px;
-            letter-spacing: 2px;
+        flex-direction: column;
+        width: 100%;
+        .left-intro{
+            margin: 0 auto;
+            min-width: 100%;
+            padding: 30px 0px;
+            text-align: center;
+            span{
+                font-size: 2.2rem;
+                font-weight: 600;
+                line-height: 49px;
+            }
+            .payment-wrapper{
+                max-width: 60%;
+                margin: 0 auto;
+                .payment-1{
+                    a{
+                        img{
+                            min-width: 50px;
+                            max-height: 50px;
+                        }
+                    }
+                    p{
+                        text-align: left;
+                        font-size: 1.125rem;
+                    }
+                }
+                .payment-2{
+                    a{
+                        img{
+                            min-width: 50px;
+                            max-height: 50px;
+                        }
+                    }
+                    p{
+                        text-align: left;
+                        font-size: 1.125rem;
+                    }
+                }
+            }
         }
-        .intro__text{
-            line-height: 25px;
-            font-size: 0.938rem;
+        .right-intro{
+            min-width: 100%;
+            .form-wrapper{
+                margin: 0 auto;
+            }
         }
     }
 }
 
 @media only screen and (max-width: $mobile) {
     .intro{
-        padding: 70px 0px 0px;
-        max-height: 450px;
-        text-align: center;
-        .intro__title{
-            font-size: 2.5rem;
-            line-height: 40px;
+        padding: 70px 0px 0px 0px;
+        .left-intro{
+            max-width: 100%;
+            span{
+                font-size: 1.375rem;
+                line-height: 27px;
+            }
+            .payment-wrapper{
+                flex-direction: column;
+                min-width: 100%;
+                margin: 0 auto;
+                margin-top: 30px;
+                .payment-1{
+                    margin-right: 85px;
+                    p{
+                        font-size: 1rem;
+                    }
+                }
+                .payment-2{
+                    margin-right: 155px;
+                    p{
+                        font-size: 1rem;
+                    }
+                }
+            }
         }
-        .intro__text{
-            font-size: 0.938rem;
-            line-height: 25px;
-            max-width: 90%;
-            margin: 0 auto;
+        .right-intro{
+            .form-wrapper{
+                max-width: 288px;
+                height: 418px;
+                h3{
+                    font-size: 1.125rem;
+                    font-weight: 600;
+                    line-height: 22px;
+                    padding: 17px 0px 0px 0px;
+                }
+                p{
+                    font-size: 0.75rem;
+                    font-weight: 400;
+                    line-height: 16px;
+                }
+                .form{
+                    @include form;
+                    label{
+                        font-size: 0.875rem;
+                        font-weight: 400;
+                        line-height: 20px;
+                        padding: 5px 0px 0px 25px;
+                    }
+                    input{
+                        width: 248px;
+                        height: 50px;
+                        font-size: 0.875rem;
+                        line-height: 20px;
+                    }
+                }
+                .form__btn{
+                    max-width: 248px;
+                    height: 50px;
+                    padding: 0 0 5px 0;
+                }
+                .form-2{
+                    max-width: 248px;
+                    justify-content: space-around;
+                    label{
+                        font-size: 0.625rem;
+                    }
+                }
+            }
         }
-        .intro__btn{
-            margin-top: 25px;
-        }
-            
     }
 }
